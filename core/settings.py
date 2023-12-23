@@ -92,34 +92,13 @@ DATABASES = {
         'USER': 'Exam1',
         'PASSWORD': 'Xpand',
         'HOST': 'database-1.cyrf1ygkfgm4.us-east-2.rds.amazonaws.com',
-        'PORT': '1433',  # Puede ser '1433' por defecto
+        'PORT': '1433',
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'u239331163_hcj',
-#         'USER': 'u239331163_hcj',
-#         'PASSWORD': 'n1??^DtsYK;',
-#         'HOST': '149.100.151.52',
-#         'PORT': 3306,
-#         "OPTIONS": {
-#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-#         }
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
