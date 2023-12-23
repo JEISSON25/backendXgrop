@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  testxgroup:
+    build: .
+    container_name: testxgroup
+    ports:
+      - "8004:8004"
+    volumes:
+      - .:/app

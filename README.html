@@ -1,0 +1,23 @@
+# Proyecto Django Backend API REST FRAMEWORK
+
+
+Requisitos::
+- Tener instalado Python versión 3.5 o superior
+
+
+PASO 1: INGRESAR AL ENTORNO VIRTUAL con el comando:
+source env/bin/activate 
+
+PASO 2: Instalar los requerimientos con el comando pip3 install -r requerimients.txt
+PASO 2: Ubicarse en la ruta de la carpeta application y ejecutar los siguientes pasos para iniciar las migraciones
+
+- A: INICIAR LAS MIGRACIONES DE LA BASE DE DATOS (SQL SERVER) - Ambiente de desarrolllo puesto
+    : python3 manage.py makemigrations
+    : python3 manage.py migrate
+- B crear supersuper usuario de Django FRAMEWORK:
+    : python3 manage.py createsuperuser
+
+PASO 3: Iniciacializar el servidor
+    : python3 manage.py runserver 0:8004
+
+Api Nube => https://testxgroup.ingejei.com/v1/
