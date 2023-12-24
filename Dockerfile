@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN echo "[ODBC Driver 17 for SQL Server]" >> /etc/odbcinst.ini
 RUN echo "Description=Microsoft ODBC Driver 17 for SQL Server" >> /etc/odbcinst.ini
-RUN echo "Driver=/usr/lib/odbc17.so" >> /etc/odbcinst.ini
+RUN echo "Driver=/usr/local/lib/odbc17.so" >> /etc/odbcinst.ini
 RUN echo "UsageCount=1" >> /etc/odbcinst.ini
 
 
