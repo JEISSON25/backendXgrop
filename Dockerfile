@@ -12,7 +12,7 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN export LD_LIBRARY_PATH=`/opt/microsoft/msodbcsql17/lib64:$LD_LIBRARY_PATH`
 # RUN pip install -r requirements.txt
-RUN pip uninstall pyodbc
+# RUN pip uninstall pyodbc
 RUN pip install --no-binary :all: pyodbc
 # RUN brew install unixodbc
 
