@@ -6,12 +6,14 @@ COPY requirements.txt /core/requirements.txt
 RUN apt update -y
 RUN apt install unixodbc-dev -y
 RUN pip install --upgrade pip 
-RUN export LD_LIBRARY_PATH=`/opt/microsoft/msodbcsql17/lib64:$LD_LIBRARY_PATH`
+
 # RUN export MYSQLCLIENT_CFLAGS=`pkg-config mysqlclient --cflags`
 # RUN export MYSQLCLIENT_LDFLAGS=`pkg-config mysqlclient --libs`
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+RUN export LD_LIBRARY_PATH=`/opt/microsoft/msodbcsql17/lib64:$LD_LIBRARY_PATH`
+# RUN pip install -r requirements.txt
 # RUN pip uninstall pyodbc
-RUN pip install --no-binary :all: pyodbc
+
 # RUN brew install unixodbc
 
 COPY . /core
