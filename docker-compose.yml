@@ -1,26 +1,26 @@
-# version: '3'
-# services:
-
-#   testxgroup:
-#     build: .
-#     container_name: testxgroup
-#     ports:
-#       - "8004:8004"
-#     volumes:
-#       - .:/app
-
 version: '3'
-
 services:
+
   testxgroup:
     build: .
     container_name: testxgroup
-    volumes:
-      - .:/app
     ports:
       - "8004:8004"
-    depends_on:
-      - db
+    volumes:
+      - .:/app
 
-  db:
-    image: "mcr.microsoft.com/mssql/server"
+# version: '3'
+
+# services:
+#   testxgroup:
+#     build: .
+#     container_name: testxgroup
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "8004:8004"
+#     depends_on:
+#       - db
+
+#   db:
+#     image: "mcr.microsoft.com/mssql/server"
